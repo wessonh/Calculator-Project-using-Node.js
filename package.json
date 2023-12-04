@@ -1,0 +1,18 @@
+{
+  "name": "calculatorproject3",
+  "version": "1.0.0",
+  "description": "This is my calculator project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Henry Wesson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.11.0"
+  }
+}

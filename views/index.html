@@ -1,0 +1,67 @@
+<!--
+Henry Wesson
+SD 230
+10/28/2023
+
+Project 2 - Calculator HTML file
+
+This is the html file for my calculator. It calls the CSS and JavaScript files and handles the html layout.
+This program can do addition, subtraction, multiplication, division, and handle parenthesis.
+This program can also handle decimals, toggle between negative and postitive numbers, and clear the current total.
+The buttons have hover and click states. The program also has a scrollable history of calculations that can also be cleared. 
+ 
+Extra Credit: I made a light theme and dark theme for this program that is togglable with a button.  
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Henry's Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css"> <!-- CSS styles -->
+</head>
+
+<body>
+    <h1>Henry's Calculator</h1> <!-- header to display the title of program -->
+    <div id="calculatorUI">
+        <input type="text" id="display" readonly>
+        <br>
+        <!-- these are the buttons for the calculator -->
+        <button class="calculator-button" id="button-1">1</button>
+        <button class="calculator-button" id="button-2">2</button>
+        <button class="calculator-button" id="button-3">3</button>
+        <button class="calculator-button" id="button-divide">/</button> <!-- divide button -->
+        <br>
+        <button class="calculator-button" id="button-4">4</button>
+        <button class="calculator-button" id="button-5">5</button>
+        <button class="calculator-button" id="button-6">6</button>
+        <button class="calculator-button" id="button-plus">+</button> <!-- plus button -->
+        <br>
+        <button class="calculator-button" id="button-7">7</button>
+        <button class="calculator-button" id="button-8">8</button>
+        <button class="calculator-button" id="button-9">9</button>
+        <button class="calculator-button" id="button-minus">-</button> <!-- minus button -->
+        <br>
+        <button class="calculator-button" id="button-0">0</button>
+        <button class="calculator-button" id="button-multiply">*</button> <!-- multiply button -->
+        <button class="calculator-button" id="button-leftPar">(</button> <!-- left parentheses -->
+        <button class="calculator-button" id="button-rightPar">)</button> <!-- right parentheses -->
+        <br>
+        <button class="calculator-button" id="button-equals">=</button> <!-- equals button, calls calculate function -->
+        <button class="calculator-button" id="button-AC">AC</button> <!-- clear button, calls allClear function -->
+        <button class="calculator-button" id="button-negSign">+/-</button> <!-- this button toggles the negative sign for numbers-->
+    </div>
+    <div id="history"></div>
+
+    <button class="calculator-button" id="button-changeTheme">Change Theme</button> <!-- this button toggles light dark theme -->
+    <button class="calculator-button" id="button-clearHistory">Clear History</button> <!-- this button clears the history window -->
+    <a href="/about" class="calculator-button">About</a> <!--link to About page-->
+    <script src="/CalculatorJavaScript.js"></script> <!-- javascript file-->
+</body>
+
+</html>

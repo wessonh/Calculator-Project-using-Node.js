@@ -1,0 +1,126 @@
+/* 
+Henry Wessson
+SD 230
+11/6/2023
+Calculator - CSS
+
+This is the CSS style sheet for my Calculator program. 
+Contains the styling for the HTML elements 
+*/
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Goldman', sans-serif; 
+}
+
+h1, p {
+    font-family: 'Goldman', sans-serif; 
+}
+
+.calculator-button,
+#display,
+#history,
+#button-about,
+#button-changeTheme,
+#button-clearHistory {
+    font-family: 'Goldman', sans-serif; 
+}
+
+
+
+.calculator-button:hover,
+#button-about:hover,
+#button-changeTheme:hover,
+#button-clearHistory:hover,
+a.calculator-button:hover,
+a.calculator-button:active {
+    background-color: #ddd !important;
+    color: #333 !important;
+}
+
+.calculator-button,
+a.calculator-button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+}
+
+#history {
+    height: 150px;
+    overflow-y: scroll;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.dark-theme, 
+.dark-theme .calculator-button,
+.dark-theme button, 
+.dark-theme #display,
+.dark-theme #history {
+    background-color: #333;
+    color: #fff;
+}
+
+a.calculator-button,
+#button-about,
+#button-changeTheme,
+#button-clearHistory {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none; 
+    display: inline-block; 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+}
+
+.dark-theme a.calculator-button,
+.dark-theme #button-about,
+.dark-theme #button-changeTheme,
+.dark-theme #button-clearHistory {
+    background-color: #333;
+    color: #fff;
+}
+
+.calculator-button:active {
+    background-color: orange !important;
+    color: #333;
+}
+
+.dark-theme .calculator-button:hover, 
+.dark-theme a.calculator-button:hover,
+.dark-theme #button-about:hover,
+.dark-theme #button-changeTheme:hover,
+.dark-theme #button-clearHistory:hover {
+    background-color: #555 !important;
+    color: #fff !important;
+}
+
+
+a.calculator-button:active,
+#button-about:active,
+#button-changeTheme:active,
+#button-clearHistory:active
+.dark-theme .calculator-button:active,
+.dark-theme a.calculator-button:active,
+.dark-theme #button-about:active,
+.dark-theme #button-changeTheme:active,
+.dark-theme #button-clearHistory:active {
+    background-color: orange !important;
+    color: #fff !important;
+}
